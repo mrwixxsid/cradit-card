@@ -1,0 +1,115 @@
+/*######################## DEFAULT ########################*/
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#container{
+    position: absolute;
+    max-width: 574px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -63%);
+}
+#clear{
+	clear: both;
+}
+/*######################## END DEFAULT ########################*/
+
+/*######################## PAYMENT ########################*/
+
+#payment-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-transform: capitalize;
+    text-align: left;
+    color: #101010;
+}
+#payment-error{
+    display: none;
+    position: relative;
+    background-color: #ff7675;
+    width: 100%;
+    height: 52px;
+    padding: 10px;
+    margin: 10px 0 20px;
+}
+#payment-error-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: left;
+    color: #fff;
+}
+.fal.fa-exclamation-triangle,.fal.fa-times{
+    font-size: 22px;
+    padding-top: 5px;
+    padding-right: 12px;
+    color: #c0392b;
+}
+.fal.fa-times{
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+#payment-info-section{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-auto-rows: 52px;
+    grid-gap: 26px;
+}
+.payment-input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #9da3a6;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #101010;
+    padding: 8px 14px;
+    transition: .3 ease;
+    outline: none;
+}
+.payment-input:focus{
+    border-color: #0984e3;
+}
+#cn{
+    grid-column: 1/3;
+}
+#payment-submit{
+    grid-column: 1/3;
+    display: block;
+    background-color: #0984e3;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    margin: 6px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 14px;
+    transition: .9 ease;
+    cursor:  pointer;
+    outline: none;
+}
+#payment-submit:hover{
+    background-color: #058cf5;
+}
+/*######################## END PAYMENT ########################*/

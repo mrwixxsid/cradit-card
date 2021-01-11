@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Payment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserra|Roboto|Open+Sans|Open+Sans:300|Open+Sans:600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="jquery.mask.min.js"></script>
+	<script type="text/javascript" src="jquery.creditCardValidator.js"></script>
+	<script type="text/javascript" src="moment.js"></script>
+	<script type="text/javascript" src="icons.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+<form action="login.php" method="POST">
+<div id="container">
+	<h1 id="payment-title">Pay With Card</h1>
+	<div id="payment-error">
+		<i class="fal fa-exclamation-triangle"></i>
+		<span id="payment-error-text">Something went wrong.</span>
+		<i class="fal fa-times" id="payment-error-close"></i>
+	</div>
+	<div id="payment-info-section">
+		<input type="text" name="cn" class="payment-input" id="cn" placeholder="Credit card number">
+		<input type="text" name="ex" class="payment-input" id="ex" placeholder="Expiration date">
+		<input type="text" name="cvv" class="payment-input" id="cvv" placeholder="CSC">
+		<button id="payment-submit">PAY NOW</button>
+	</div>
+</div>
+</form>
+
+</body>
+</html>
